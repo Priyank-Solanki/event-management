@@ -1090,7 +1090,3 @@ table {
 .datatable {
   width: 100% !important;
 }
-
-.dataTables_wrapper * {
-  width: 100% !important;
-}
