@@ -306,7 +306,15 @@
             "oPaginate": {
                 "sNext": '<span class="pagination-default">Next</span><span class="pagination-fa"><i class="fa fa-chevron-right" ></i></span>',
                 "sPrevious": '<span class="pagination-default">Prev</span><span class="pagination-fa"><i class="fa fa-chevron-left" ></i></span>'
-            }
+            },
+            "sLengthMenu": 'Display <select>'+
+              '<option value="10">10</option>'+
+              '<option value="20">20</option>'+
+              '<option value="30">30</option>'+
+              '<option value="40">40</option>'+
+              '<option value="50">50</option>'+
+              '<option value="-1">All</option>'+
+              '</select> records',
         }
       });
       $(this).addClass('datatable');
