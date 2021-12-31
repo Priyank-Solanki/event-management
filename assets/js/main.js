@@ -302,7 +302,8 @@
       $(this).DataTable({
         "scrollX": true,
         "searching": false,
-      })
+      });
+      $(this).addClass('datatable');
     });;
   });
 
