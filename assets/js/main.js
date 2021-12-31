@@ -303,23 +303,10 @@
         "scrollX": true,
         "searching": false,
         "oLanguage": {
-//             "oPaginate": {
-//                 "sNext": '<span class="pagination-default">Next</span><span class="pagination-fa"><i class="fa fa-chevron-right" ></i></span>',
-//                 "sPrevious": '<span class="pagination-default">Prev</span><span class="pagination-fa"><i class="fa fa-chevron-left" ></i></span>'
-//             },
-            "oPaginate": '<nav aria-label="Page navigation example">'+
-                '<ul class="pagination justify-content-center">'+
-                    '<li class="page-item disabled">'+
-                      '<a class="page-link" href="#" tabindex="-1">Previous</a>'+
-                    '</li>'+
-                    '<li class="page-item"><a class="page-link" href="#">1</a></li>'+
-                    '<li class="page-item"><a class="page-link" href="#">2</a></li>'+
-                    '<li class="page-item"><a class="page-link" href="#">3</a></li>'+
-                    '<li class="page-item">'+
-                      '<a class="page-link" href="#">Next</a>'+
-                    '</li>'+
-                  '</ul>'+
-                '</nav>',
+            "oPaginate": {
+                "sNext": '<span class="pagination-default">Next</span><span class="pagination-fa"><i class="fa fa-chevron-right" ></i></span>',
+                "sPrevious": '<span class="pagination-default">Prev</span><span class="pagination-fa"><i class="fa fa-chevron-left" ></i></span>'
+            },
             "sLengthMenu": 'Rows per page <select>'+
               '<option value="10">10</option>'+
               '<option value="20">20</option>'+
