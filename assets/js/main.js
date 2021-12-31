@@ -302,9 +302,16 @@
       $(this).DataTable({
         "scrollX": true,
         "searching": false,
+        "oLanguage": {
+            "oPaginate": {
+                "sNext": '<span class="pagination-default">Next</span><span class="pagination-fa"><i class="fa fa-chevron-right" ></i></span>',
+                "sPrevious": '<span class="pagination-default">Prev</span><span class="pagination-fa"><i class="fa fa-chevron-left" ></i></span>'
+            }
+        }
       });
       $(this).addClass('datatable');
-    });;
+      
+    });
   });
 
   /**
