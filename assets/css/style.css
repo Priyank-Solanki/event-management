@@ -1086,3 +1086,7 @@ h1, h2, h3, h4, h5, h6 {
 table {
   width: 100% !important;
 }
+
+.datatable {
+  width: 100% !important;
+}
