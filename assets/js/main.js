@@ -319,13 +319,17 @@
       // });
       // $(this).addClass('datatable');
       var i = 1;
-      while (i <= 20) {
+      while (i <= 50) {
         var assignRemoveBool = getRandomInt(0, 3);
-        roomAllocation = '';
-        assignRemove = '<button type="button" class="btn btn-primary">Assign</button>';
+        var roomAllocation = '';
+        var assignRemove = '<button type="button" class="btn btn-primary">Assign</button>';
+        var roomKey = '<span class="btn bg-success mb-2">Gurukul</span>';
+        var roomAllocated = '<span class="btn bg-danger mb-2">No</span>';
         if (assignRemoveBool != 0) {
-          var roomAllocation = 'Godavari-' + getRandomInt(100, 300);
-          var assignRemove = '<button type="button" class="btn btn-secondary">Remove</button>';
+          roomAllocation = 'Godavari-' + getRandomInt(100, 300);
+          assignRemove = '<button type="button" class="btn btn-secondary">Remove</button>';
+          roomKey = '<span class="btn bg-danger mb-2">Asharam</span>';
+          roomAllocated = '<span class="btn bg-success mb-2">Yes</span>';
         }
         if ($(this).hasClass('roomAllocation')) {
           $(this).children().eq(1).append('<tr>' +
@@ -338,6 +342,35 @@
             '<td>+91' + getRandomInt(666666666, 999999999) + '</td>' +
             '<td>' + roomAllocation + '</td>' +
             '<td>' + assignRemove + '</td>'+
+          '</tr>');
+        }
+        if ($(this).hasClass('roomKeyDetails')) {
+          $(this).children().eq(1).append('<tr>' +
+            '<th><input type="checkbox"/></th>' +
+            '<th>' + i + '</th>' +
+            '<td>' + generateName() + '</td>' +
+            '<td>' + generateName() + '</td>' +
+            '<td>' + getRandomInt(100, 300) + '</td>' +
+            '<td>GF</td>' +
+            '<td>' + getRandomInt(1, 6) + '</td>' +
+            '<td>GF</td>' +
+            '<td>' + roomKey + '</td>' +
+            '<td>' + roomAllocated + '</td>'+
+            '<td><i class="bi bi-three-dots-vertical"></i></td>'+
+          '</tr>');
+        }
+        if ($(this).hasClass('roomList')) {
+          $(this).children().eq(1).append('<tr>' +
+            '<th>' + i + '</th>' +
+            '<td>' + generateName() + '</td>' +
+            '<td>' + generateName() + '</td>' +
+            '<td>' + getRandomInt(100, 300) + '</td>' +
+            '<td>GF</td>' +
+            '<td>' + getRandomInt(1, 6) + '</td>' +
+            '<td>GF</td>' +
+            '<td>' + roomKey + '</td>' +
+            '<td>' + roomAllocated + '</td>'+
+            '<td><i class="bi bi-three-dots-vertical"></i></td>'+
           '</tr>');
         }
         i++;
